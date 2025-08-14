@@ -23,6 +23,13 @@
   .container {
     display: flex;
     flex-direction: column;
+    gap: 3rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 
@@ -41,9 +48,6 @@
     }
     .content {
       width: 465px;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
       margin-bottom: 2rem;
     }
   }
