@@ -1,22 +1,4 @@
 /* ******************* */
-/*   UTILITY CLASSES   */
-/* ******************* */
-.card {
-  width: 100%;
-  background-color: #fff;
-  border-radius: 0.25rem;
-  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
-  padding: 1rem 2rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  text-align: center;
-}
-
-/* ******************* */
 /*     EXPLANATION     */
 /* ******************* */
 #explanation {
@@ -69,28 +51,35 @@
 /* ******************* */
 
 #card-grid {
-  padding: 2rem var(--page-padding) 4rem;
-  background-color: #f4f4f4;
-  background-origin: padding-box;
-  --max-card-width: clamp(15rem, 40vw, 20rem);
+  padding: 2rem var(--page-padding) 4rem; /* TODO: REVIEW PADDING*/
+  background: var(--blue-gradient-light); /* TODO: SET OPACITY OF 0.25 SOMEHOW*/
 
-  h2 {
-    margin-bottom: 2rem;
-    font-size: 2rem;
+  h3 {
+    margin-bottom: -0.5rem;
   }
 
   .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(var(--max-card-width), 1fr));
-    justify-items: center;
+    grid-template-columns: 1fr;
     gap: 1rem 2rem;
     margin: 0 auto;
+  }
+
+  .card {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  img {
+    width: auto;
   }
 }
 
 @media only screen and (min-width: 64rem) {
   #card-grid {
-    --max-card-width: 16rem;
+    .card-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }
 
