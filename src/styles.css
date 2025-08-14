@@ -124,63 +124,63 @@ a {
 .TextPreset1 {
   font-size: 64px;
   font-weight: 600;
-  line-height: 110%;
+  line-height: 1.1em;
   letter-spacing: -0.05em;
 }
 
 .TextPreset2 {
   font-size: 48px;
   font-weight: 600;
-  line-height: 110%;
+  line-height: 1.1em;
   letter-spacing: -0.05em;
 }
 
 .TextPreset3 {
   font-size: 32px;
   font-weight: 600;
-  line-height: 110%;
+  line-height: 1.1em;
   letter-spacing: -0.05em;
 }
 
 .TextPreset4 {
   font-size: 24px;
   font-weight: 600;
-  line-height: 29px;
+  line-height: 1.2em;
   letter-spacing: -0.05em;
 }
 
 .TextPreset5 {
   font-size: 20px;
   font-weight: 600;
-  line-height: 150%;
+  line-height: 1.5em;
   letter-spacing: -0.05em;
 }
 
 .TextPreset6SemiBold {
   font-size: 16px;
   font-weight: 600;
-  line-height: 150%;
+  line-height: 1.5em;
   letter-spacing: 0em;
 }
 
 .TextPreset6Regular {
   font-size: 16px;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 1.5em;
   letter-spacing: 0em;
 }
 
 .TextPreset7Bold {
   font-size: 14px;
   font-weight: 700;
-  line-height: 150%;
+  line-height: 1.5em;
   letter-spacing: 0em;
 }
 
 .TextPreset7Regular {
   font-size: 14px;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 1.5em;
   letter-spacing: 0em;
 }
 
