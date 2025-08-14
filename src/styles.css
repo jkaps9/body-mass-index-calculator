@@ -15,15 +15,15 @@
   );
 
   --page-padding: 5%;
-  --section-max-width: 70rem;
+  --section-max-width: 72.5rem;
 
-  --primary-color: #070f41;
+  --primary-color: #253347; /*blue 900*/
   --accent-color: #f2545b;
 
   --header-text-color: var(--primary-color);
   --header-text-color-light: #ffffff;
 
-  --body-text-color: #000000;
+  --body-text-color: #5e6e85; /*grey 500*/
   --body-text-color-light: #ffffff;
 }
 
@@ -124,19 +124,19 @@ a {
 .TextPreset1 {
   font-size: 64px;
   font-weight: 600;
-  line-height: 110.00000238418579;
+  line-height: 110%;
 }
 
 .TextPreset2 {
   font-size: 48px;
   font-weight: 600;
-  line-height: 110.00000238418579;
+  line-height: 110%;
 }
 
 .TextPreset3 {
   font-size: 32px;
   font-weight: 600;
-  line-height: 110.00000238418579;
+  line-height: 110%;
 }
 
 .TextPreset4 {
@@ -148,31 +148,31 @@ a {
 .TextPreset5 {
   font-size: 20px;
   font-weight: 600;
-  line-height: 150;
+  line-height: 150%;
 }
 
 .TextPreset6SemiBold {
   font-size: 16px;
   font-weight: 600;
-  line-height: 150;
+  line-height: 150%;
 }
 
 .TextPreset6Regular {
   font-size: 16px;
   font-weight: 400;
-  line-height: 150;
+  line-height: 150%;
 }
 
 .TextPreset7Bold {
   font-size: 14px;
   font-weight: 700;
-  line-height: 150;
+  line-height: 150%;
 }
 
 .TextPreset7Regular {
   font-size: 14px;
   font-weight: 400;
-  line-height: 150;
+  line-height: 150%;
 }
 
 /* ******************* */
