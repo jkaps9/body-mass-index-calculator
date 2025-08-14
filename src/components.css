@@ -35,7 +35,7 @@
       align-items: flex-end;
     }
 
-    img {
+    .image-container {
       width: 564px;
       height: 533px;
     }
