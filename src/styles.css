@@ -1,4 +1,13 @@
 :root {
+  --colors__white: #ffffff;
+  --colors__black: #000000;
+  --colors__grey__300: #acc1de;
+  --colors__grey__500: #5e6e85;
+  --colors__blue__100: #e1e7fe;
+  --colors__blue__300: #b3d3f1;
+  --colors__blue__500: #345ff6;
+  --colors__blue__900: #253347;
+
   --page-padding: 5%;
   --section-max-width: 70rem;
 
@@ -10,6 +19,34 @@
 
   --body-text-color: #000000;
   --body-text-color-light: #ffffff;
+}
+
+/* ******************* */
+/*        FONTS        */
+/* ******************* */
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/inter-v19-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/inter-v19-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/inter-v19-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* ******************* */
