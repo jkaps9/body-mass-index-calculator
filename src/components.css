@@ -1,0 +1,186 @@
+/* ******************* */
+/*   UTILITY CLASSES   */
+/* ******************* */
+.card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  text-align: center;
+}
+
+/* ******************* */
+/*      CARD GRID      */
+/* ******************* */
+
+#card-grid {
+  padding: 2rem var(--page-padding) 4rem;
+  background-color: #f4f4f4;
+  background-origin: padding-box;
+  --max-card-width: clamp(15rem, 40vw, 20rem);
+
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--max-card-width), 1fr));
+    justify-items: center;
+    gap: 1rem 2rem;
+    margin: 0 auto;
+  }
+
+  .card {
+  }
+
+  img {
+    width: 15%;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  #card-grid {
+    --max-card-width: 16rem;
+    img {
+      width: 20%;
+    }
+  }
+}
+
+/* ******************* */
+/*    IMAGE GALLERY    */
+/* ******************* */
+
+#image-gallery {
+  padding: 2rem var(--page-padding) 4rem;
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .image {
+    height: auto;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 0.25rem;
+    /* border: 2px solid var(--accent-color); */
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .two-col {
+    grid-column: span 2;
+    grid-row: 2;
+  }
+
+  .three-row {
+    display: none;
+  }
+
+  img {
+    border-radius: inherit;
+  }
+
+  .attribution {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 1.5% 3%;
+    font-size: 0.7rem;
+    text-align: start;
+    color: var(--body-text-color-light);
+    background-color: rgba(0, 0, 0, 0.2);
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  #image-gallery {
+    .gallery {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .three-row {
+      display: block;
+      grid-row: 1 / span 3;
+      /* to align it to the right */
+      grid-column: 3;
+      /* to align it to the left */
+      /* grid-column: 1; */
+    }
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  #image-gallery {
+    .gallery {
+      row-gap: 1.5rem;
+    }
+  }
+}
+
+/* ******************* */
+/*       DIAG BG       */
+/* ******************* */
+
+#diag-bg {
+  padding: 4rem 0;
+  background-color: #ffffff;
+
+  .diagonal-box {
+    position: relative;
+    width: 100%;
+    height: 12rem;
+    z-index: 1;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -4rem;
+      left: 0;
+      width: 100%;
+      height: calc(100% + 100px);
+      background-color: var(--primary-color);
+      clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 4rem), 0% 100%);
+    }
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 var(--page-padding);
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 33vw;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
