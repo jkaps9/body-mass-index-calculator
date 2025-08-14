@@ -17,6 +17,39 @@
 }
 
 /* ******************* */
+/*     EXPLANATION     */
+/* ******************* */
+#explanation {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 64rem) {
+  #explanation {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    img {
+      width: 564px;
+      height: 533px;
+    }
+    .content {
+      width: 465px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+/* ******************* */
 /*      CARD GRID      */
 /* ******************* */
 
