@@ -20,6 +20,7 @@
 /*     EXPLANATION     */
 /* ******************* */
 #explanation {
+  padding: 0;
   .container {
     display: flex;
     flex-direction: column;
@@ -34,23 +35,30 @@
     flex-direction: column;
     gap: 2rem;
   }
+
+  img {
+    width: clamp(23.4375rem, 19.2782rem + 17.7465vw, 35.25rem);
+  }
 }
 
-/* DESKTOP */
-@media only screen and (min-width: 64rem) {
+/* TABLET */
+@media only screen and (min-width: 48rem) {
   #explanation {
     .container {
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-end;
     }
+  }
+}
 
+/* DESKTOP */
+@media only screen and (min-width: 64rem) {
+  #explanation {
     .image-container {
-      width: 564px;
       height: 533px;
     }
     .content {
-      /* width: 465px; */
       margin-bottom: 2rem;
     }
   }
