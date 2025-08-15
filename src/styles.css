@@ -431,7 +431,8 @@ form {
 
   .form-row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   label:not(:has(input[type="radio"])) {
@@ -442,8 +443,25 @@ form {
     color: var(--primary-color);
   }
 
+  label.TextPreset7 {
+    margin-bottom: 0.5rem;
+  }
+
+  input[type="number"] {
+    padding: 1rem 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--body-text-color);
+    width: 100%;
+  }
+
+  .input {
+    display: flex;
+    place-items: center;
+  }
+
   .unit-label {
     color: var(--colors-blue-500);
+    margin-left: -3rem;
   }
 
   .results {
@@ -469,6 +487,11 @@ form {
 
 @media only screen and (min-width: 48rem) {
   form {
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     .results {
       border-radius: 1rem 999px 999px 1rem;
     }
