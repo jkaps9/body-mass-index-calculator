@@ -454,8 +454,7 @@ form {
 
   .results {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 2rem;
     background: var(--colors-blue-500);
@@ -481,6 +480,8 @@ form {
     }
 
     .results {
+      grid-template-columns: repeat(2, 1fr);
+      place-items: center;
       border-radius: 1rem 999px 999px 1rem;
     }
   }
