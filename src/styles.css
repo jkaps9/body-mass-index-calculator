@@ -422,7 +422,7 @@ header {
 /*        FORM         */
 /* ******************* */
 
-form#bmi-calculator {
+form {
   text-align: start;
   display: flex;
   flex-direction: column;
@@ -444,7 +444,7 @@ form#bmi-calculator {
     gap: 1.5rem;
     padding: 2rem;
     background: var(--colors-blue-500);
-    border-radius: 1rem 999px 999px 1rem;
+    border-radius: 1rem;
 
     p {
       color: var(--colors-white);
@@ -455,6 +455,14 @@ form#bmi-calculator {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  form {
+    .results {
+      border-radius: 1rem 999px 999px 1rem;
     }
   }
 }
