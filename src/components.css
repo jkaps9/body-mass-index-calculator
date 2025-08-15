@@ -50,19 +50,22 @@
 /*      CARD GRID      */
 /* ******************* */
 
+#card-grid,
+#limitations {
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin: 0 auto;
+  }
+}
+
 #card-grid {
   padding: 2rem var(--page-padding) 4rem; /* TODO: REVIEW PADDING*/
   background: var(--blue-gradient-light); /* TODO: SET OPACITY OF 0.25 SOMEHOW*/
 
   h3 {
     margin-bottom: -0.5rem;
-  }
-
-  .card-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-    margin: 0 auto;
   }
 
   .card {
@@ -82,5 +85,21 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem 2rem;
     }
+  }
+}
+
+/* ******************* */
+/*     LIMITATIONS     */
+/* ******************* */
+
+#limitations {
+  .card-container {
+    gap: 1.5rem;
+  }
+
+  .header {
+    display: flex;
+    place-items: center;
+    gap: 1rem;
   }
 }
