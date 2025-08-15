@@ -1,12 +1,12 @@
 :root {
-  --colors__white: #ffffff;
-  --colors__black: #000000;
-  --colors__grey__300: #acc1de;
-  --colors__grey__500: #5e6e85;
-  --colors__blue__100: #e1e7fe;
-  --colors__blue__300: #b3d3f1;
-  --colors__blue__500: #345ff6;
-  --colors__blue__900: #253347;
+  --colors-white: #ffffff;
+  --colors-black: #000000;
+  --colors-grey-300: #acc1de;
+  --colors-grey-500: #5e6e85;
+  --colors-blue-100: #e1e7fe;
+  --colors-blue-300: #b3d3f1;
+  --colors-blue-500: #345ff6;
+  --colors-blue-900: #253347;
 
   --blue-gradient: linear-gradient(
     90deg,
@@ -23,7 +23,7 @@
   --page-padding: 5%;
   --section-max-width: 72.5rem;
 
-  --primary-color: #253347; /*blue 900*/
+  --primary-color: var(--colors-blue-900); /*blue 900*/
   --accent-color: #f2545b;
 
   --header-text-color: var(--primary-color);
@@ -204,7 +204,7 @@ a {
 
   background: #ffffff;
   box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
-  border-radius: 16px;
+  border-radius: 1rem;
 
   max-width: 35.25rem;
 }
@@ -427,6 +427,7 @@ form#bmi-calculator {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
   .form-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -434,5 +435,26 @@ form#bmi-calculator {
 
   label:not(:has(input[type="radio"])) {
     display: block;
+  }
+
+  .results {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: var(--colors-blue-500);
+    border-radius: 1rem 999px 999px 1rem;
+
+    p {
+      color: var(--colors-white);
+      font-size: 1rem;
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
   }
 }
