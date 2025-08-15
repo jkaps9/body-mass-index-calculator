@@ -138,7 +138,7 @@ label {
 
 .TextPreset2 {
   /* 32px - 48px */
-  font-size: clamp(2rem, 1.6479rem + 1.5023vw, 3rem);
+  font-size: clamp(2rem, 0.8571rem + 2.381vw, 3rem);
 
   font-weight: 600;
   line-height: 1.1em;
