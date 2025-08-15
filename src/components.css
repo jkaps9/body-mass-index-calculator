@@ -26,10 +26,16 @@
 /* TABLET */
 @media only screen and (min-width: 48rem) {
   #explanation {
+    padding-right: 5.6%;
     .container {
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-end;
+      gap: 4.5rem;
+    }
+
+    .image-container {
+      margin-left: -4.5rem;
     }
   }
 }
