@@ -129,7 +129,8 @@ label {
 /*      TYPOGRAPHY     */
 /* ******************* */
 .TextPreset1 {
-  font-size: 64px;
+  /* 48px - 64px */
+  font-size: clamp(3rem, 2.6479rem + 1.5023vw, 4rem);
   font-weight: 600;
   line-height: 1.1em;
   letter-spacing: -0.05em;
