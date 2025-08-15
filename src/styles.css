@@ -389,9 +389,6 @@ header {
 
   .container {
     display: flex;
-    .text {
-      /* justify-self: flex-start; */
-    }
     flex-direction: column;
     justify-content: center;
     align-items: center;
