@@ -29,7 +29,7 @@
   --header-text-color: var(--primary-color);
   --header-text-color-light: #ffffff;
 
-  --body-text-color: #5e6e85; /*grey 500*/
+  --body-text-color: var(--colors-grey-500); /*grey 500*/
   --body-text-color-light: #ffffff;
 }
 
@@ -120,7 +120,8 @@ h6 {
 }
 
 p,
-a {
+a,
+label {
   color: var(--body-text-color);
 }
 
@@ -437,6 +438,14 @@ form {
     display: block;
   }
 
+  label.TextPreset6 {
+    color: var(--primary-color);
+  }
+
+  .unit-label {
+    color: var(--colors-blue-500);
+  }
+
   .results {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -448,7 +457,6 @@ form {
 
     p {
       color: var(--colors-white);
-      font-size: 1rem;
     }
 
     .left {
