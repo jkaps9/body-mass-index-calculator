@@ -205,6 +205,8 @@ a {
   background: #ffffff;
   box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
   border-radius: 16px;
+
+  max-width: 35.25rem;
 }
 
 /* ******************* */
@@ -422,7 +424,9 @@ header {
 
 form#bmi-calculator {
   text-align: start;
-
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   .form-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
