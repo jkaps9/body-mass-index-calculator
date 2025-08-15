@@ -93,6 +93,12 @@
 /* ******************* */
 
 #limitations {
+  padding-top: 5.125rem;
+  padding-bottom: 6rem;
+  .content {
+    margin-bottom: 3.5rem;
+  }
+
   .card-container {
     gap: 1.5rem;
   }
@@ -100,6 +106,11 @@
   .header {
     display: flex;
     place-items: center;
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
     gap: 1rem;
   }
 }
